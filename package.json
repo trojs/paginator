@@ -1,6 +1,6 @@
 {
     "name": "@hckrnews/paginator",
-    "version": "0.1.3",
+    "version": "0.2.0",
     "description": "Paginator",
     "files": [
         "src/paginator.js",
