@@ -47,8 +47,12 @@
         "build": "microbundle --target node",
         "dev": "microbundle --target node watch",
         "lint": "eslint src/*.js --config .eslintrc",
+        "lint:fix": "eslint src/*.js --config .eslintrc --fix",
         "test": "jest",
-        "coveralls": "jest && codecov && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js"
+        "test:watch": "jest src --watch",
+        "coveralls": "jest && codecov && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js",
+        "cpd": "node_modules/jscpd/bin/jscpd src",
+        "vulnerabilities": "npm audit --only=prod"
     },
     "devDependencies": {
         "@babel/core": "^7.12.8",
@@ -70,6 +74,7 @@
         "eslint-plugin-prettier": "^3.4.1",
         "esm": "^3.2.25",
         "jest": "^27.2.5",
+        "jscpd": "^3.3.26",
         "microbundle": "^0.14.0",
         "prettier": "^2.2.1"
     },
