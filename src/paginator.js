@@ -62,7 +62,7 @@ class Paginator {
      * @return {array}
      */
     get current() {
-        return this.items.slice(this.start, this.end);
+        return this.count ? this.items : this.items.slice(this.start, this.end);
     }
 
     /**
@@ -71,7 +71,7 @@ class Paginator {
      * @return {number}
      */
     get total() {
-        return this.items.length;
+        return this.count ?? this.items.length;
     }
 
     /**
@@ -144,17 +144,12 @@ class Paginator {
      * Set the items
      *
      * @param {array} items
-     *
-     * @return {Paginator}
      */
     setItems(items) {
         if (items === null || items.constructor.name !== 'Array') {
             throw new TypeError('items is not an array');
         }
-
         this.items = items;
-
-        return this;
     }
 
     /**
@@ -165,36 +160,31 @@ class Paginator {
      * @return {boolean}
      */
     isValidPage(page) {
-        return page < this.pages && page >= 0;
+        return (
+            (page < this.pages && page >= 0) || (page === 0 && this.pages === 0)
+        );
     }
 
     /**
      * Set the page
      *
      * @param {number} page
-     *
-     * @return {Paginator}
      */
     setPage(page) {
         if (page !== null && page.constructor.name !== 'Number') {
-            throw new TypeError('page is not a valid number');
+            throw new TypeError('page is not a number');
         }
 
         if (page !== null && !this.isValidPage(page)) {
             throw new RangeError('page is not a valid number');
         }
-
         this.page = page || this.page;
-
-        return this;
     }
 
     /**
      * Set the page size
      *
      * @param {number} size
-     *
-     * @return {Paginator}
      */
     setSize(size) {
         if (size !== null && (size.constructor.name !== 'Number' || size < 1)) {
@@ -202,16 +192,12 @@ class Paginator {
         }
 
         this.size = size || this.size;
-
-        return this;
     }
 
     /**
      * Set the url
      *
      * @param {string} url
-     *
-     * @return {Paginator}
      */
     setUrl(url) {
         if (url !== null && url.constructor.name !== 'String') {
@@ -219,8 +205,12 @@ class Paginator {
         }
 
         this.url = url || this.url;
+    }
 
-        return this;
+    setCount(count) {
+        if (count) {
+            this.count = count;
+        }
     }
 }
 
@@ -234,10 +224,20 @@ class Paginator {
  *
  * @return {Paginator}
  */
-const PaginatorBuilder = ({ items, page = null, size = null, url = null }) => {
+const PaginatorBuilder = ({
+    items,
+    page = null,
+    size = null,
+    url = null,
+    count = null,
+}) => {
     const paginator = new Paginator();
 
-    paginator.setItems(items).setSize(size).setPage(page).setUrl(url);
+    paginator.setCount(count);
+    paginator.setItems(items);
+    paginator.setSize(size);
+    paginator.setPage(page);
+    paginator.setUrl(url);
 
     return paginator;
 };
