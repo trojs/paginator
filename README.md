@@ -6,7 +6,7 @@ With this package you can easy create a pagination object.
 
 ## Example usage
 
-```
+```javascript
 import Paginator from '@hckrnews/paginator'
 
  const results = Paginator({
@@ -24,19 +24,19 @@ import Paginator from '@hckrnews/paginator'
 The field `items` should be an array.
 It doesnt matter what every item contains, but an object is common.
 
-### page
+### field page
 
 The field `page` should be an integer, and it is optional.
 You can set the current page with the page.
 The first page is 0, and if you dont set a page, it is the first page.
 
-### size
+### field size
 
 The field `size` should be an integer, and it is optional.
 You can set the maximum of items per page with the size.
 The minimum is 1, and the default is 10.
 
-### url
+### field url
 
 The field `url` should be a string, and it is optional.
 This will be used for the links, for e.g. the current, previous and next pages.
@@ -45,7 +45,7 @@ This will be used for the links, for e.g. the current, previous and next pages.
 
 Example:
 
-```
+```javascript
 {
     _links: {
         self: '/?test=true&size=10&page=1',
