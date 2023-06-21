@@ -47,22 +47,24 @@ Example:
 
 ```javascript
 {
-    _links: {
+    cursors: {
         self: '/?test=true&size=10&page=1',
         prev: '/?test=true&size=10&page=0',
-        next: '/?test=true&size=10&page=2'
+        next: '/?test=true&size=10&page=2',
+        first: '/?test=true&size=10&page=0',
+        last: '/?test=true&size=10&page=2',
     },
     count: 21,
     size: 10,
     page: 1,
     pages: 3,
-    result: [11, 12, 13, 14, 15, 16, 17, 18, 19, 20]
+    items: [11, 12, 13, 14, 15, 16, 17, 18, 19, 20]
 }
 ```
 
-### _links
+### cursors
 
-The field `_links` should be an object.
+The field `cursors` should be an object.
 It returns the current page (`self`), previous page (`prev`) and the next page (`next`)
 If there is no next or previous page, it returns `null`
 If you dont have set an url, it returns for every link `null`
@@ -85,9 +87,9 @@ E.g.
 If there are 20 items and the page size is 10, there are 2 pages.
 And if there are 21 items and the page size is 10, there are 3 pages.
 
-### result
+### items
 
-The field `result` should be an array.
+The field `items` should be an array.
 It returns all items for the given page.
 E.g. in the example you see all items for page 1 (second page).
 Because there are 21 items, the next page will return just an array with 1 item.
