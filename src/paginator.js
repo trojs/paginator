@@ -3,6 +3,12 @@ import { SortDirection } from './enums/sort-direction.js'
 import { cleanUrl } from './clean-url.js'
 
 /**
+ * Get the pagination data
+ * @typedef {{ self: string, prev: string, next: string, first: string, last: string }} Links
+ * @typedef {{ cursors: Links, count: number, pages: number, size: number, page: number, items: object[] }} Pagination
+ */
+
+/**
  * The paginator.
  */
 class Paginator {
@@ -157,7 +163,6 @@ class Paginator {
 
   /**
    * Get the pagination data
-   * @typedef {{ self: string, prev: string, next: string, first: string, last: string }} Links
    * @returns {{ cursors: Links, count: number, pages: number, size: number, page: number, items: object[] }}
    */
   get data () {
