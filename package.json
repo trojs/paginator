@@ -1,6 +1,6 @@
 {
     "name": "@hckrnews/paginator",
-    "version": "2.0.1",
+    "version": "2.0.2",
     "description": "Paginator",
     "files": [
         "src/paginator.js",
@@ -30,7 +30,7 @@
         "lint": "eslint src/*.js --config .eslintrc",
         "lint:report": "eslint src/*.js --config .eslintrc -f json -o report.json",
         "lint:fix": "eslint src/*.js --config .eslintrc --fix",
-        "test": "c8 node --test src/",
+        "test": "c8 node --test src",
         "cpd": "node_modules/jscpd/bin/jscpd src",
         "vulnerabilities": "npm audit --omit=dev"
     },
@@ -45,7 +45,7 @@
         "eslint-plugin-promise": "^6.0.1",
         "eslint-plugin-sonarjs": "^0.19.0",
         "jscpd": "^3.5.9",
-        "prettier": "^2.2.1",
+        "prettier": "^3.0.0",
         "supertest": "^6.3.3"
     },
     "type": "module",
