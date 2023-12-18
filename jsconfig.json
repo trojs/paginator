@@ -2,8 +2,8 @@
     "compilerOptions": {
         "checkJs": true,
         "target": "ESNext",
-        "module": "ESNext",
-        "moduleResolution": "node",
+        "module": "NodeNext",
+        "moduleResolution": "nodenext",
         "rootDirs": [
             "src"
         ],
