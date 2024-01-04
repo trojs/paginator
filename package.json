@@ -1,6 +1,6 @@
 {
     "name": "@hckrnews/paginator",
-    "version": "2.1.0",
+    "version": "2.1.1",
     "description": "Paginator",
     "files": [
         "src/paginator.js",
@@ -36,11 +36,11 @@
     },
     "devDependencies": {
         "@hckrnews/eslint-config": "^3.0.0",
-        "c8": "^8.0.0",
+        "c8": "^9.0.0",
         "eslint": "^8.23.0",
         "eslint-config-standard": "^17.1.0",
         "eslint-plugin-import": "^2.26.0",
-        "eslint-plugin-jsdoc": "^46.0.0",
+        "eslint-plugin-jsdoc": "^48.0.0",
         "eslint-plugin-n": "^16.0.0",
         "eslint-plugin-promise": "^6.0.1",
         "eslint-plugin-sonarjs": "^0.23.0",
