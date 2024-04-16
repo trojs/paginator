@@ -53,7 +53,7 @@
         "node": ">= 18.13"
     },
     "dependencies": {
-        "@hckrnews/arrays": "^4.0.0",
+        "@hckrnews/arrays": "^4.0.4",
         "@hckrnews/enum": "^3.0.0"
     },
     "funding": {
