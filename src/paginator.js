@@ -1,4 +1,4 @@
-import { Arr } from '@hckrnews/arrays'
+import { Arr } from '@trojs/arrays'
 import { SortDirection } from './enums/sort-direction.js'
 import { cleanUrl } from './clean-url.js'
 
