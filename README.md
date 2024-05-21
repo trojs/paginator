@@ -1,13 +1,13 @@
 # Paginator
 
-[![NPM version][npm-image]][npm-url] [![Downloads][downloads-image]][npm-stats] [![Build Status][travis-image]][travis-url] [![Coveralls Status][coveralls-image]][coveralls-url] [![Codecov Status][codecov-image]][codecov-url] [![Scrutinizer Code Quality][scrutinizer-image]][scrutinizer-url]
+[![NPM version][npm-image]][npm-url] [![Downloads][downloads-image]][npm-stats]
 
 With this package you can easy create a pagination object.
 
 ## Example usage
 
 ```javascript
-import Paginator from '@hckrnews/paginator'
+import Paginator from '@trojs/paginator'
 
  const results = Paginator({
     items,
@@ -94,15 +94,7 @@ It returns all items for the given page.
 E.g. in the example you see all items for page 1 (second page).
 Because there are 21 items, the next page will return just an array with 1 item.
 
-[downloads-image]: https://img.shields.io/npm/dm/@hckrnews/paginator.svg
-[npm-url]: https://www.npmjs.com/package/@hckrnews/paginator
-[npm-image]: https://img.shields.io/npm/v/@hckrnews/paginator.svg
-[npm-stats]: https://npm-stat.com/charts.html?package=@hckrnews/paginator
-[travis-url]: https://travis-ci.org/hckrnews/paginator
-[travis-image]: https://img.shields.io/travis/hckrnews/paginator/main.svg
-[coveralls-url]: https://coveralls.io/r/hckrnews/paginator
-[coveralls-image]: https://img.shields.io/coveralls/hckrnews/paginator/main.svg
-[codecov-url]: https://codecov.io/gh/hckrnews/paginator
-[codecov-image]: https://img.shields.io/codecov/c/github/hckrnews/paginator.svg
-[scrutinizer-url]: https://scrutinizer-ci.com/g/hckrnews/paginator/?branch=main
-[scrutinizer-image]: https://scrutinizer-ci.com/g/hckrnews/paginator/badges/quality-score.png?b=main
+[downloads-image]: https://img.shields.io/npm/dm/@trojs/paginator.svg
+[npm-url]: https://www.npmjs.com/package/@trojs/paginator
+[npm-image]: https://img.shields.io/npm/v/@trojs/paginator.svg
+[npm-stats]: https://npm-stat.com/charts.html?package=@trojs/paginator

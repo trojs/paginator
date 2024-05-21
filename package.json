@@ -1,6 +1,6 @@
 {
-    "name": "@hckrnews/paginator",
-    "version": "2.1.3",
+    "name": "@trojs/paginator",
+    "version": "2.2.0",
     "description": "Paginator",
     "files": [
         "src/paginator.js",
@@ -19,7 +19,7 @@
     ],
     "author": {
         "name": "Pieter Wigboldus",
-        "url": "https://hckr.news/"
+        "url": "https://trojs.org/"
     },
     "bugs": {
         "url": "https://github.com/hckrnews/paginator/issues"
@@ -30,7 +30,7 @@
         "lint": "eslint src/*.js --config .eslintrc",
         "lint:report": "eslint src/*.js --config .eslintrc -f json -o report.json",
         "lint:fix": "eslint src/*.js --config .eslintrc --fix",
-        "test": "c8 node --test src",
+        "test": "c8 node --test",
         "cpd": "node_modules/jscpd/bin/jscpd src",
         "vulnerabilities": "npm audit --omit=dev"
     },
@@ -45,16 +45,15 @@
         "eslint-plugin-promise": "^6.0.1",
         "eslint-plugin-sonarjs": "^0.24.0",
         "jscpd": "^3.5.9",
-        "prettier": "^3.0.0",
-        "supertest": "^6.3.3"
+        "prettier": "^3.0.0"
     },
     "type": "module",
     "engines": {
         "node": ">= 18.13"
     },
     "dependencies": {
-        "@hckrnews/arrays": "^4.0.0",
-        "@hckrnews/enum": "^3.0.0"
+        "@trojs/arrays": "^5.0.0",
+        "@trojs/enum": "^3.1.0"
     },
     "funding": {
         "type": "github",

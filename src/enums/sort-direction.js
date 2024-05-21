@@ -1,4 +1,4 @@
-import { Enum } from '@hckrnews/enum'
+import { Enum } from '@trojs/enum'
 
 /**
  * @typedef SortDirectionEnum
