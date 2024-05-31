@@ -1,6 +1,6 @@
 {
     "name": "@trojs/paginator",
-    "version": "2.2.0",
+    "version": "2.2.1",
     "description": "Paginator",
     "files": [
         "src/paginator.js",
@@ -10,7 +10,7 @@
     "main": "src/paginator.js",
     "repository": {
         "type": "git",
-        "url": "https://github.com/hckrnews/paginator.git"
+        "url": "https://github.com/trojs/paginator.git"
     },
     "keywords": [
         "javascript",
@@ -22,10 +22,10 @@
         "url": "https://trojs.org/"
     },
     "bugs": {
-        "url": "https://github.com/hckrnews/paginator/issues"
+        "url": "https://github.com/trojs/paginator/issues"
     },
     "license": "MIT",
-    "homepage": "https://github.com/hckrnews/paginator#readme",
+    "homepage": "https://github.com/trojs/paginator#readme",
     "scripts": {
         "lint": "eslint src/*.js --config .eslintrc",
         "lint:report": "eslint src/*.js --config .eslintrc -f json -o report.json",
@@ -44,7 +44,7 @@
         "eslint-plugin-n": "^16.6.2",
         "eslint-plugin-promise": "^6.0.1",
         "eslint-plugin-sonarjs": "^0.24.0",
-        "jscpd": "^3.5.9",
+        "jscpd": "^4.0.0",
         "prettier": "^3.0.0"
     },
     "type": "module",
