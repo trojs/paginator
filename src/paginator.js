@@ -1,6 +1,8 @@
 import { Arr } from '@trojs/arrays'
 import { SortDirection } from './enums/sort-direction.js'
 import { cleanUrl } from './clean-url.js'
+import paginationSchema from './schemas/pagination-schema.js'
+import paginationLinksSchema from './schemas/pagination-links-schema.js'
 
 /**
  * Get the pagination data
@@ -310,4 +312,4 @@ const PaginatorBuilder = ({
   return paginator
 }
 
-export { PaginatorBuilder as Paginator }
+export { PaginatorBuilder as Paginator, paginationSchema, paginationLinksSchema }
