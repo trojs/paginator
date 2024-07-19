@@ -1,11 +1,13 @@
 {
     "name": "@trojs/paginator",
-    "version": "2.2.3",
+    "version": "2.3.0",
     "description": "Paginator",
     "files": [
         "src/paginator.js",
         "src/clean-url.js",
-        "/src/enums/sort-direction.js"
+        "/src/enums/sort-direction.js",
+        "/src/schemas/pagination-schema.js",
+        "/src/schemas/pagination-links-schema.js"
     ],
     "main": "src/paginator.js",
     "repository": {
