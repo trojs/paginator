@@ -9,6 +9,11 @@ With this package you can easy create a pagination object.
 ```javascript
 import Paginator from '@trojs/paginator'
 
+/**
+ * @typedef {import('@trojs/paginator').Pagination} Pagination
+ */
+
+/** @type {Pagination} */
  const results = Paginator({
     items,
     page,
