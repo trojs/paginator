@@ -1,6 +1,6 @@
 {
     "name": "@trojs/paginator",
-    "version": "2.2.2",
+    "version": "2.2.3",
     "description": "Paginator",
     "files": [
         "src/paginator.js",
@@ -27,23 +27,21 @@
     "license": "MIT",
     "homepage": "https://github.com/trojs/paginator#readme",
     "scripts": {
-        "lint": "eslint src/*.js --config .eslintrc",
-        "lint:report": "eslint src/*.js --config .eslintrc -f json -o report.json",
-        "lint:fix": "eslint src/*.js --config .eslintrc --fix",
+        "lint": "eslint --config eslint.config.js",
+        "lint:report": "eslint --config eslint.config.js -f json -o report.json",
+        "lint:fix": "eslint --config eslint.config.js --fix",
+        "lint:rules": "eslint --print-config file.js > eslintconfig.json",
         "test": "c8 node --test",
         "cpd": "node_modules/jscpd/bin/jscpd src",
         "vulnerabilities": "npm audit --omit=dev"
     },
     "devDependencies": {
-        "@hckrnews/eslint-config": "^3.0.0",
+        "@eslint/js": "^9.6.0",
+        "@stylistic/eslint-plugin-js": "^2.3.0",
         "c8": "^10.0.0",
-        "eslint": "^8.23.0",
-        "eslint-config-standard": "^17.1.0",
-        "eslint-plugin-import": "^2.26.0",
-        "eslint-plugin-jsdoc": "^48.0.0",
-        "eslint-plugin-n": "^16.6.2",
-        "eslint-plugin-promise": "^6.0.1",
-        "eslint-plugin-sonarjs": "^0.25.0",
+        "eslint": "^9.6.0",
+        "eslint-plugin-jsdoc": "^48.5.0",
+        "eslint-plugin-sonarjs": "^1.0.3",
         "jscpd": "^4.0.0",
         "prettier": "^3.0.0"
     },
