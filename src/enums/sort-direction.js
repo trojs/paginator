@@ -1,9 +1,11 @@
 import { Enum } from '@trojs/enum'
 
+/* eslint-disable sonarjs/public-static-readonly */
+
 /**
- * @typedef SortDirectionEnum
- * @property {string} asc "asc"
- * @property {string} desc "desc"
+ * @typedef {object} SortDirectionEnum
+ * @property {string} asc
+ * @property {string} desc
  */
 
 /**
@@ -12,7 +14,9 @@ import { Enum } from '@trojs/enum'
  * @readonly
  * @enum { SortDirectionEnum }
  */
-export class SortDirection extends Enum {
-  static asc = 'asc'
-  static desc = 'desc'
+class SortDirection extends Enum {
+    static asc = 'asc'
+    static desc = 'desc'
 }
+
+export { SortDirection }
