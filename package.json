@@ -53,7 +53,7 @@
     },
     "dependencies": {
         "@trojs/arrays": "^5.0.0",
-        "@trojs/enum": "^3.1.0"
+        "@trojs/enum": "^4.0.0"
     },
     "funding": {
         "type": "github",
