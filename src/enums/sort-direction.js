@@ -15,8 +15,8 @@ import { Enum } from '@trojs/enum'
  * @enum { SortDirectionEnum }
  */
 class SortDirection extends Enum {
-    static asc = 'asc'
-    static desc = 'desc'
+  static asc = 'asc'
+  static desc = 'desc'
 }
 
 export { SortDirection }
