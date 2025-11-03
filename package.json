@@ -51,7 +51,7 @@
         "node": ">= 20"
     },
     "dependencies": {
-        "@trojs/arrays": "^7.0.0",
+        "@trojs/arrays": "^8.0.0",
         "@trojs/enum": "^5.0.0"
     },
     "funding": {
